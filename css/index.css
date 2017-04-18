@@ -1,8 +1,8 @@
 /*
 * @Author: JMW
 * @Date:   2017-04-13 08:50:20
-* @Last Modified by:   JMW
-* @Last Modified time: 2017-04-18 11:16:46
+* @Last Modified by:   hzyjsys
+* @Last Modified time: 2017-04-18 17:00:25
 */
 
 /* 轮播图 */
@@ -25,6 +25,9 @@
 #slider .slideshow_item{
 	width:100%;
 	height:484px;
+}
+#slider .slideshow_item .image img{
+	border:0;
 }
 #slider .slideshow_item .data{
 	display:none;
@@ -186,7 +189,7 @@
 	margin:0 auto;
 }
 .index-row1 .col1{
-	width: 770px;
+	width: 760px;
 	float: left;
 }
 .index-row1 .col2{
@@ -214,7 +217,7 @@
 	overflow: hidden;
 }
 .index-row1 .col1 .pul-list li .news-detail{
-	width: 770px;
+	width: 760px;
 	height: 120px;
 }
 .index-row1 .col1 .pul-list li .news-detail img{
@@ -272,7 +275,7 @@
 }
 .index-row1 .col1 .pul-list li .news-det{
 	float: left;
-	width: 702px;
+	width: 692px;
 	margin:4px 0 0 20px;
 }
 .index-row1 .col1 .pul-list li .news-det a{
@@ -359,7 +362,7 @@
 }
 .pul-list2 li{
 	overflow: hidden;
-	padding:20px 0;
+	padding:21px 0;
 	border-bottom: 1px dotted #ccc;
 }
 .pul-list2 li i{
@@ -376,6 +379,9 @@
 	float: left;
 	margin-left: 20px;
 	cursor: pointer;
+}
+.a.pul-list2 li{
+	padding:20px 0;
 }
 .a.pul-list2 li h2{
 	display: block;
@@ -426,7 +432,7 @@
 .index-row1.index-row2 .col2 .zhgx{
 	width: 375px;
 	height: 300px;
-	margin-top: 20px;
+	margin-top: 30px;
 	background: #fff;
 }
 .index-row1.index-row2 .col2 .zhgx .article{
