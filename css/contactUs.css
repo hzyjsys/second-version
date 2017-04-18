@@ -1,8 +1,8 @@
 /*
 * @Author: JMW
 * @Date:   2017-04-17 16:52:57
-* @Last Modified by:   JMW
-* @Last Modified time: 2017-04-18 14:33:05
+* @Last Modified by:   hzyjsys
+* @Last Modified time: 2017-04-18 16:22:04
 */
 /*
 * @Author: JMW
@@ -76,8 +76,8 @@
 	top:-20px;
 }
 .BMap_Marker img{
-	margin-left:46px!important;
-	margin-top:21px!important;
+	margin-left:0px!important;
+	margin-top:0px!important;
 }
 .iw_poi_title {
 	color:#CC5522;
