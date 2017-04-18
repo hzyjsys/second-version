@@ -2,7 +2,11 @@
 * @Author: JMW
 * @Date:   2017-04-17 16:52:57
 * @Last Modified by:   hzyjsys
+<<<<<<< HEAD
 * @Last Modified time: 2017-04-18 16:28:33
+=======
+* @Last Modified time: 2017-04-18 16:22:04
+>>>>>>> 093d7430e2136d131b60215e5fb9629efe739974
 */
 /*
 * @Author: JMW
@@ -76,8 +80,13 @@
 	top:-20px;
 }
 .BMap_Marker img{
+<<<<<<< HEAD
 	margin-left:0!important;
 	margin-top:0!important;
+=======
+	margin-left:0px!important;
+	margin-top:0px!important;
+>>>>>>> 093d7430e2136d131b60215e5fb9629efe739974
 }
 .iw_poi_title {
 	color:#CC5522;
