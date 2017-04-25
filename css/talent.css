@@ -2,70 +2,91 @@
 * @Author: JMW
 * @Date:   2017-03-27 15:28:24
 * @Last Modified by:   JMW
-* @Last Modified time: 2017-04-18 11:12:02
+* @Last Modified time: 2017-04-25 11:53:31
 */
 
 /* 工作团队*/
-.talentInt{
+.shuoming{
 	width:expression(document.body.clientWidth <= 1440? "1440px": "auto");
 	min-width:1440px;
 	background:#fff;
+}
+.talentInt{
+	width:expression(document.body.clientWidth <= 1440? "1440px": "auto");
+	min-width:1440px;
+	background:#f5f5f5;
 }
 .bgc{
 	width: 1200px;
 	margin:0 auto;
 	position: relative;
 }
-.talentInt .talentInt-con{
-	height: 640px;
+.recruit{
+	margin:50px;
 }
-.talentInt .talentInt-con ul{
-	margin:20px  0 0 50px;
+.recruit h1{
+	font-size: 22px;
+    color: #5495b6;
+    line-height: 70px;
 }
-.talentInt .talentInt-con ul li{
-	width: 850px;
+.recruit h3{
+	font-weight: bold;
+    line-height: 50px;
 }
-.talentInt .talentInt-con ul li img{
-	float: left;
-	margin-top:30px;
+.recruit h3 span{
+	font-weight: normal;
+	margin:0;
 }
-.talentInt .talentInt-con ul li div{
-	width: 600px;
-	float: right;
-	margin:30px 50px 0 0;
+.recruit span{
+	margin-left:80px;
 }
-.talentInt .talentInt-con ul li div h2{
-	font-size:22px;
-	width: 66px;
-	border-bottom: 2px solid #ffc000;
-	margin-top: 16px;
+.recruit span a{
+	text-decoration: underline;
+	color:red;
 }
-.talentInt .talentInt-con ul li div p{
-	margin-top:20px;
-	line-height: 24px;
-	color:#464343;
-	letter-spacing: 2px;
+.recruit p{
+	line-height: 30px;
 	text-indent: 2em;
-	font-size: 14px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
 }
-.talentInt-con,.talentImpor-con,.zhaopin-con{
+.recruit p strong{
+	font-weight: bold;
+	text-decoration: underline;
+}
+.recruit em{
+	font-size: 14px;
+	line-height: 30px;
+}
+.recruit ul li{
+	font-size: 14px;
+    list-style: disc;
+    margin-left: 20px;
+    line-height: 30px;
+}
+.last{
+	margin-bottom:0;
+	padding-bottom:50px;
+}
+.talentInt-con,.talentImpor-con,.zhaopin-con,.shuoming-con{
 	width: 920px;
-	height: 940px;
 	padding-top: 50px;
 	margin:0 auto;
 	padding-left: 280px;
 }
-.talentInt-nav,.talentImpor-nav,.zhaopin-nav{
+.talentInt-nav,.talentImpor-nav,.zhaopin-nav,.shuoming-nav{
 	width: 100%;
 	height: 48px;
 	position: relative;
 }
-.talentInt .talentInt-nav img.title,.talentImpor-nav img.title,.zhaopin-nav img.title{
+.talentInt .talentInt-nav img.title,.talentImpor-nav img.title,
+.zhaopin-nav img.title,.shuoming-nav img.title{
 	position: absolute;
 	left: 50px;
 	top: 0px;
 }
-.talentInt .talentInt-nav img.xiushi,.talentImpor-nav img.xiushi,.zhaopin-nav img.xiushi{
+.talentInt .talentInt-nav img.xiushi,.talentImpor-nav img.xiushi,
+.zhaopin-nav img.xiushi,.shuoming-nav img.xiushi{
 	position: absolute;
 	right: 200px;
 	top: 10px;
@@ -73,77 +94,16 @@
 
 /* 人才引进 */
 .talentImpor{
-	width: 100%;
-	height: 500px;
-	background: #f5f5f5;
-}
-.talentImpor .talentImpor-con{
-	height: 500px;
+	width:expression(document.body.clientWidth <= 1440? "1440px": "auto");
+	min-width:1440px;
+	background: #fff;
 }
 /* 招贤纳士 */
 .zhaopin{
-	width: 100%;
-	background: #fff;
+	width:expression(document.body.clientWidth <= 1440? "1440px": "auto");
+	min-width:1440px;
+	background: #f5f5f5;
 }
 .zhaopin .zhaopin-con{
-	height: 700px;
-}
-.zhaopin .zhaopin-con .zp-con{
-	margin-top: 50px;
-}
-.zhaopin .zhaopin-con .zp-con li{
-	margin-top: 20px;
-}
-.zhaopin .zhaopin-con .zp-con .zhaopin-con2{
-	width: 390px;
-	height: 170px;
-	background:#f5f5f5;
-	float: left;
-}
-.zhaopin .zhaopin-con .zp-con .zhaopin-con3{
-	width: 290px;
-	height: 170px;
-	background:#f5f5f5;
-	float: left;
-}
-.zhaopin .zhaopin-con .zp-con .zhaopin-title{
-	float: left;
-	width: 240px;
-	height: 170px;
-	position: relative;
-}
-.zhaopin .zhaopin-con .zp-con .zhaopin-title img{
-	position: absolute;
-	left:50%;
-	top:36px;
-	margin-left:-24px;
-}
-.zhaopin .zhaopin-con .zp-con .zhaopin-title h2{
-	font-size: 24px;
-	position: absolute;
-	bottom: 10px;
-	color: #fff;
-}
-.zhaopin .zhaopin-con .zp-con .zhaopin-con2 h4,
-.zhaopin .zhaopin-con .zp-con .zhaopin-con3 h4{
-	font-size: 20px;
-	margin:20px 0 0 40px;
-}
-.zhaopin .zhaopin-con .zp-con .zhaopin-con2 ul,
-.zhaopin .zhaopin-con .zp-con .zhaopin-con3 ul{
-	margin-left: 50px;
-}
-.zhaopin .zhaopin-con .zp-con .zhaopin-con2 ul li,
-.zhaopin .zhaopin-con .zp-con .zhaopin-con3 ul li{
-	font-size: 12px;
-	color:#666;
-	list-style-type: disc;
-}
-.zhaopin .zhaopin-con .zp-con h2{
-	font-size: 30px;
-	text-align: center;
-	margin-bottom: 40px;
-}
-.zhaopin .zhaopin-con .zp-con p{
-	text-align: right;
+	height: 500px;
 }

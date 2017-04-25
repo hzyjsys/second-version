@@ -2,11 +2,11 @@
 * @Author: JMW
 * @Date:   2017-03-27 15:28:24
 * @Last Modified by:   JMW
-* @Last Modified time: 2017-04-18 11:12:28
+* @Last Modified time: 2017-04-25 11:32:04
 */
 
 /* 新闻动态  通知公告*/
-.hotNews{
+.hotNews,.notice{
 	width:expression(document.body.clientWidth <= 1440? "1440px": "auto");
 	min-width:1440px;
 	background:#fff;
@@ -44,8 +44,11 @@
 	left: 330px;
 	position: absolute;
 }
-.notice .notice-con ul li,.hotNews .hotNews-con ul li{
+.hotNews .hotNews-con ul li{
 	height: 200px;
+}
+.notice .notice-con ul li{
+	height: 140px;
 }
 .notice .notice-con ul li a.title,.hotNews .hotNews-con ul li a.title{
 	font-size: 18px;

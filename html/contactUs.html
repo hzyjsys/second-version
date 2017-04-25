@@ -2,28 +2,51 @@
 <html lang="en">
     <head>
         <title>汉字研究与现代应用实验室</title>
-		<meta charset="utf-8">
+		<meta charset="utf-8"/>
 	    <meta name="format-detection" content="telephone=no"/>
-	    <meta name="renderer" content="webkit">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	    <meta name="viewport" content="width=1440">
+	    <meta name="renderer" content="webkit"/>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	    <meta name="viewport" content="width=1440"/>
 	    <meta name="keywords" content="汉字研究,交叉学科,实验室,汉字研究与现代应用交叉学科实验室"/>
-	    <meta name="description" content="汉字研究与现代应用交叉学科实验室是北京师范大学学科交叉重点建设项目，该实验室依托于具有深厚历史渊源、坚实学术基础的北师范大学文学院和教学、研究实力雄厚的北京师范大学信息科学与技术学院，是集学术科研与社会服务于一体、传统人文学科与现代信息科学相交叉的高层次科研和服务机构。">
+	    <meta name="description" content="汉字研究与现代应用交叉学科实验室是北京师范大学学科交叉重点建设项目，该实验室依托于具有深厚历史渊源、坚实学术基础的北师范大学文学院和教学、研究实力雄厚的北京师范大学信息科学与技术学院，是集学术科研与社会服务于一体、传统人文学科与现代信息科学相交叉的高层次科研和服务机构。"/>
 	    <link rel="stylesheet" href="../css/base.css"/>
 	    <link rel="stylesheet" href="../css/common.css"/>
 	    <link rel="stylesheet" href="../css/contactUs.css"/>
+	    <script src="../js/jquery.min.js"></script>
+	    <script src="../js/common.js"></script>
+	    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=zukZ6zvwv0AAsQ6b8Yf7fzTGvQ4V5nMf&s=1"></script>
+	    <script src="../js/contactUs.js"></script>
+	    <script>
+	        $(function(){
+	            $("#pwdSpan").hide();
+	        })
+	    </script>
+	    <!--[if lte IE 9]>
+	        <script src="../js/ie9.js"></script>
+	    <![endif]-->
+	    <!--[if lte IE 8]>
+            <style>
+                #header .search input{
+                    line-height: 23px;
+                }
+                .mask0{
+                    display:block;
+                }
+            </style>
+        <![endif]-->
     </head>
     <body>
     	<!-- 头部 -->
     	<div id="header">
     		<div class="wrapper">
     			<a class="logo" title="点击可切换logo">
-	                <img src="../images/logo2.png" alt="">
+	                <img src="../images/logo2.png" alt=""/>
 	            </a>
-	            <img src="../images/logo.png" height="64" width="431" alt="" style="margin-top:20px;">
+	            <img src="../images/logo.png" height="64" width="431" alt="" style="margin-top:20px;"/>
 	            <div class="search">
-	            	<input type="text" placeholder="请输入关键词">
-	            	<img src="../images/search.png" height="25" width="25" alt="">
+	            	<input id="pwd" type="text" placeholder="建设中..."/>
+                    <input id="pwdSpan" type="text" placeholder="建设中...">
+	            	<img src="../images/search.png" height="25" width="25" alt=""/>
 	            </div>
     		</div>
     	</div>
@@ -56,13 +79,6 @@
 	                    <dd><a href="sciAch.html#activity" class="a2">学术活动</a></dd>
 	                </dl>
 	            </li>
-	            <li><a href="talent.html" class="a1">队伍建设</a>
-	            	<dl>
-	                    <dd><a href="talent.html#talentInt" class="a2">工作团队</a></dd>  
-	                    <dd><a href="talent.html#talentImpor" class="a2">人才引进</a></dd> 
-	                    <dd><a href="talent.html#zhaopin" class="a2">招贤纳士</a></dd>  
-	                </dl>
-	            </li>
 	            <li><a href="cooperCommu.html" class="a1">合作交流</a>
 	            	<dl>
 	                    <dd><a href="cooperCommu.html#international" class="a2">国际交流</a></dd> 
@@ -72,16 +88,24 @@
 	            </li>
 	            <li><a href="product.html" class="a1">成果转化</a>
 	            </li>
+	            <li><a href="talent.html" class="a1">招贤纳士</a>
+	            	<dl>
+	                    <dd><a href="talent.html#talentInt" class="a2">科研人员</a></dd>  
+	                    <dd><a href="talent.html#talentImpor" class="a2">技术人员</a></dd> 
+	                    <dd><a href="talent.html#zhaopin" class="a2">实习生</a></dd>  
+	                </dl>
+	            </li>
 	            <li  style="background-color: #f9be00;"><a href="contactUs.html" class="a1" style="color:#3e3c3c;">联系我们</a>
 	            	<dl>
 	                    <dd><a href="contactUs.html#telephone" class="a2">联系方式</a></dd>               
 	                </dl>
 	            </li>    
 	        </ul>
+	        <div class="mask0"></div>
     	</div>	
     	<!-- 导航条end -->
     	<!-- 首图 -->
-    	<div class="shoutu-nav"><img src="../images/contactUs.jpg" height="400" width="1903" alt="">	</div>
+    	<div class="shoutu-nav"><img src="../images/contactUs.jpg" height="400" width="1903" alt=""/></div>
 		<!-- 首图end -->
     	<!-- 内容 -->
     	<div class="content">
@@ -90,8 +114,8 @@
 				<div class="bgc">
 					<div class="contact-con">
 						<div class="contact-nav">
-							<img src="../images/contactUs.png" height="48" width="120" alt="" class="title">
-							<img src="../images/school.png" height="24" width="452" alt="" class="xiushi">
+							<img src="../images/contactUs.png" height="48" width="120" alt="" class="title"/>
+							<img src="../images/school.png" height="24" width="452" alt="" class="xiushi"/>
 						</div>
 						<div class="contactStyle clearfix">
 							<div class="conS">
@@ -139,12 +163,6 @@
 					<li><a href="sciAch.html#activity">学术活动</a></li>
 				</ul>
 				<ul>
-					<li><a href="talent.html">队伍建设</a></li>
-					<li><a href="talent.html#talentInt">工作团队</a></li>
-					<li><a href="talent.html#talentImpor">人才引进</a></li>
-					<li><a href="talent.html#zhaopin">招贤纳士</a></li>
-				</ul>
-				<ul>
 					<li><a href="cooperCommu.html">合作交流</a></li>
 					<li><a href="cooperCommu.html#international">国际交流</a></li>
 					<li><a href="cooperCommu.html#domestic">国内交流</a></li>
@@ -155,6 +173,12 @@
 					<li><a href="product.html">成果转化</a></li>
 				</ul>
 				<ul>
+					<li><a href="talent.html">招贤纳士</a></li>
+					<li><a href="talent.html#talentInt">科研人员</a></li>
+					<li><a href="talent.html#talentImpor">技术人员</a></li>
+					<li><a href="talent.html#zhaopin">实习生</a></li>
+				</ul>
+				<ul>
 					<li><a href="contactUs.html">联系我们</a></li>
 					<li><a href="contactUs.html#contact">联系方式</a></li>
 				</ul>
@@ -162,14 +186,9 @@
 			<div class="bsd">
 				<p>汉字交叉实验室Copyright@ 2017 ALL Right Reserved &nbsp;网站备案/许可证号：京ICP备000000001号-1</p>
 			</div>
-			<img src="../images/bsd.png" height="78" width="256" alt="">
+			<img src="../images/bsd.png" height="78" width="256" alt=""/>
 		</div>
     	<!-- 底部end -->
     </body>
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/common.js"></script>
     <script src="../js/backtop.js"></script>
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=zukZ6zvwv0AAsQ6b8Yf7fzTGvQ4V5nMf&s=1"></script>
-    <!-- <script type="text/javascript" src="https://api.map.baidu.com/api?key=&v=1.1&services=true"></script> -->
-    <script src="../js/contactUs.js"></script>
 </html>

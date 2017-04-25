@@ -12,6 +12,32 @@
 	    <link rel="stylesheet" href="../css/base.css"/>
 	    <link rel="stylesheet" href="../css/common.css"/>
 	    <link rel="stylesheet" href="../css/sciAch.css"/>
+	    <script src="../js/jquery.min.js"></script>
+	    <script src="../js/common.js"></script>
+	    <script src="../js/jquery.lazyload.min.js"></script>
+		<script>
+			$(function(){
+			    $("img.lazy").lazyload({
+			    	threshold : 200,
+			    	placeholder:"../images/loading.gif",
+			    	effect : "fadeIn"
+			    });
+			    $("#pwdSpan").hide();
+			});
+		</script>
+		<!--[if lte IE 9]>
+	        <script src="../js/ie9.js"></script>
+	    <![endif]-->
+	    <!--[if lte IE 8]>
+            <style>
+                #header .search input{
+                    line-height: 23px;
+                }
+                .mask0{
+                    display:block;
+                }
+            </style>
+        <![endif]-->
     </head>
     <body>
     	<!-- 头部 -->
@@ -22,7 +48,8 @@
 	            </a>
 	            <img src="../images/logo.png" height="64" width="431" alt="" style="margin-top:20px;">
 	            <div class="search">
-	            	<input type="text" placeholder="请输入关键词">
+	            	<input id="pwd" type="text" placeholder="建设中..."/>
+                    <input id="pwdSpan" type="text" placeholder="建设中...">
 	            	<img src="../images/search.png" height="25" width="25" alt="">
 	            </div>
     		</div>
@@ -56,13 +83,6 @@
 	                    <dd><a href="sciAch.html#activity" class="a2">学术活动</a></dd>
 	                </dl>
 	            </li>
-	            <li><a href="talent.html" class="a1">队伍建设</a>
-	            	<dl>
-	                    <dd><a href="talent.html#talentInt" class="a2">工作团队</a></dd>  
-	                    <dd><a href="talent.html#talentImpor" class="a2">人才引进</a></dd> 
-	                    <dd><a href="talent.html#zhaopin" class="a2">招贤纳士</a></dd>  
-	                </dl>
-	            </li>
 	            <li><a href="cooperCommu.html" class="a1">合作交流</a>
 	            	<dl>
 	                    <dd><a href="cooperCommu.html#international" class="a2">国际交流</a></dd> 
@@ -72,12 +92,20 @@
 	            </li>
 	            <li><a href="product.html" class="a1">成果转化</a>
 	            </li>
+	            <li><a href="talent.html" class="a1">招贤纳士</a>
+	            	<dl>
+	                    <dd><a href="talent.html#talentInt" class="a2">科研人员</a></dd>  
+	                    <dd><a href="talent.html#talentImpor" class="a2">技术人员</a></dd> 
+	                    <dd><a href="talent.html#zhaopin" class="a2">实习生</a></dd>  
+	                </dl>
+	            </li>
 	            <li><a href="contactUs.html" class="a1">联系我们</a>
 	            	<dl>
 	                    <dd><a href="contactUs.html#telephone" class="a2">联系方式</a></dd>               
 	                </dl>
 	            </li>    
 	        </ul>
+	       	<div class="mask0"></div>
     	</div>	
     	<!-- 导航条end -->
     	<!-- 首图 -->
@@ -201,11 +229,6 @@
 								<span>2016/10/07</span><br>
 								<p>汉语言文字学高级研讨班旨在继承传统汉语汉字研究的基础上，培养汉语汉字研究的自主创新型人才。研讨班由北京大学、北京师范大学发起，联合兄弟院校二十余所，从2010年开始每年暑期举办10天左右的汉语言文字学高级研讨班。目前已开办六期，扩大了学术视野，加强了学术交流，在为中国语言学的培养人才上起到了推动作用。<a href="" target="_blank">[阅读全文...]</a></p>
 							</li>
-							<!-- <li>
-								<a class="title" href="http://wxy.bnu.edu.cn/kxyj/xzlw/hyywzx/104820.html" target="_blank">王立军：朱骏声转注系联中的字形问题</a><br>
-								<span>2017/01/16</span><br>
-								<p>【摘要】朱骏声《说文通训定声》通过对“转注”的重新解读，使自己的词义理论在六书的框架下付诸实践。他的转注系联超越了字形的局限，从而在一定程度上保证了词义序列的完整性，体现了朱骏声对形义关系的理想追求。但另一方面,不承认汉字形体孳乳的必要性，也反映了朱骏声在形义关系认识上的历史局限。 <a href="http://wxy.bnu.edu.cn/kxyj/xzlw/hyywzx/104820.html" target="_blank">[阅读全文...]</a></p>
-							</li> -->
 						</ul>
 					</div>
 				</div>
@@ -238,12 +261,6 @@
 					<li><a href="sciAch.html#activity">学术活动</a></li>
 				</ul>
 				<ul>
-					<li><a href="talent.html">队伍建设</a></li>
-					<li><a href="talent.html#talentInt">工作团队</a></li>
-					<li><a href="talent.html#talentImpor">人才引进</a></li>
-					<li><a href="talent.html#zhaopin">招贤纳士</a></li>
-				</ul>
-				<ul>
 					<li><a href="cooperCommu.html">合作交流</a></li>
 					<li><a href="cooperCommu.html#international">国际交流</a></li>
 					<li><a href="cooperCommu.html#domestic">国内交流</a></li>
@@ -252,6 +269,12 @@
 				<ul>
 					<li><a href="product.html">成果转化</a></li>
 					<li><a href="product.html">成果转化</a></li>
+				</ul>
+				<ul>
+					<li><a href="talent.html">招贤纳士</a></li>
+					<li><a href="talent.html#talentInt">科研人员</a></li>
+					<li><a href="talent.html#talentImpor">技术人员</a></li>
+					<li><a href="talent.html#zhaopin">实习生</a></li>
 				</ul>
 				<ul>
 					<li><a href="contactUs.html">联系我们</a></li>
@@ -265,20 +288,5 @@
 		</div>
     	<!-- 底部end -->
     </body>
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/common.js"></script>
-    <script src="../js/backtop.js"></script>
-    <script src="../js/sciAch.js"></script>
-    <script src="../js/jquery.lazyload.min.js"></script>
-	<script>
-	$(document).ready(function(){
-		$(function(){
-		    $("img.lazy").lazyload({
-		    	threshold : 200,
-		    	placeholder:"../images/loading.gif",
-		    	effect : "fadeIn"
-		    });
-		});
-	})
-	</script>
+	<script src="../js/backtop.js"></script>
 </html>

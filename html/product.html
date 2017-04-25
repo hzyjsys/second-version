@@ -12,6 +12,32 @@
 	    <link rel="stylesheet" href="../css/base.css"/>
 	    <link rel="stylesheet" href="../css/common.css"/>
 	    <link rel="stylesheet" href="../css/product.css"/>
+	    <script src="../js/jquery.min.js"></script>
+	    <script src="../js/common.js"></script>
+	    <script src="../js/jquery.lazyload.min.js"></script>
+		<script>
+			$(function(){
+			    $("img.lazy").lazyload({
+			    	threshold : 200,
+			    	placeholder:"../images/loading.gif",
+			    	effect : "fadeIn"
+			    });
+			    $("#pwdSpan").hide();
+			});
+		</script>
+		<!--[if lte IE 9]>
+	        <script src="../js/ie9.js"></script>
+	    <![endif]-->
+	    <!--[if lte IE 8]>
+            <style>
+                #header .search input{
+                    line-height: 23px;
+                }
+                .mask0{
+                    display:block;
+                }
+            </style>
+        <![endif]-->
     </head>
     <body>
     	<!-- 头部 -->
@@ -22,7 +48,8 @@
 	            </a>
 	            <img src="../images/logo.png" height="64" width="431" alt="" style="margin-top:20px;">
 	            <div class="search">
-	            	<input type="text" placeholder="请输入关键词">
+	            	<input id="pwd" type="text" placeholder="建设中..."/>
+                    <input id="pwdSpan" type="text" placeholder="建设中...">
 	            	<img src="../images/search.png" height="25" width="25" alt="">
 	            </div>
     		</div>
@@ -56,13 +83,6 @@
 	                    <dd><a href="sciAch.html#activity" class="a2">学术活动</a></dd>
 	                </dl>
 	            </li>
-	            <li><a href="talent.html" class="a1">队伍建设</a>
-	            	<dl>
-	                    <dd><a href="talent.html#talentInt" class="a2">工作团队</a></dd>  
-	                    <dd><a href="talent.html#talentImpor" class="a2">人才引进</a></dd> 
-	                    <dd><a href="talent.html#zhaopin" class="a2">招贤纳士</a></dd>  
-	                </dl>
-	            </li>
 	            <li><a href="cooperCommu.html" class="a1">合作交流</a>
 	            	<dl>
 	                    <dd><a href="cooperCommu.html#international" class="a2">国际交流</a></dd> 
@@ -72,12 +92,20 @@
 	            </li>
 	            <li  style="background-color: #f9be00;"><a href="product.html" class="a1" style="color:#3e3c3c;">成果转化</a>
 	            </li>
+	            <li><a href="talent.html" class="a1">招贤纳士</a>
+	            	<dl>
+	                    <dd><a href="talent.html#talentInt" class="a2">科研人员</a></dd>  
+	                    <dd><a href="talent.html#talentImpor" class="a2">技术人员</a></dd> 
+	                    <dd><a href="talent.html#zhaopin" class="a2">实习生</a></dd>  
+	                </dl>
+	            </li>
 	            <li><a href="contactUs.html" class="a1">联系我们</a>
 	            	<dl>
 	                    <dd><a href="contactUs.html#telephone" class="a2">联系方式</a></dd>               
 	                </dl>
 	            </li>    
 	        </ul>
+	        <div class="mask0"></div>
     	</div>	
     	<!-- 导航条end -->
     	<!-- 首图 -->
@@ -166,12 +194,6 @@
 					<li><a href="sciAch.html#activity">学术活动</a></li>
 				</ul>
 				<ul>
-					<li><a href="talent.html">队伍建设</a></li>
-					<li><a href="talent.html#talentInt">工作团队</a></li>
-					<li><a href="talent.html#talentImpor">人才引进</a></li>
-					<li><a href="talent.html#zhaopin">招贤纳士</a></li>
-				</ul>
-				<ul>
 					<li><a href="cooperCommu.html">合作交流</a></li>
 					<li><a href="cooperCommu.html#international">国际交流</a></li>
 					<li><a href="cooperCommu.html#domestic">国内交流</a></li>
@@ -180,6 +202,12 @@
 				<ul>
 					<li><a href="product.html">成果转化</a></li>
 					<li><a href="product.html">成果转化</a></li>
+				</ul>
+				<ul>
+					<li><a href="talent.html">招贤纳士</a></li>
+					<li><a href="talent.html#talentInt">科研人员</a></li>
+					<li><a href="talent.html#talentImpor">技术人员</a></li>
+					<li><a href="talent.html#zhaopin">实习生</a></li>
 				</ul>
 				<ul>
 					<li><a href="contactUs.html">联系我们</a></li>
@@ -193,20 +221,5 @@
 		</div>
     	<!-- 底部end -->
     </body>
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/common.js"></script>
     <script src="../js/backtop.js"></script>
-    <script src="../js/product.js"></script>
-    <script src="../js/jquery.lazyload.min.js"></script>
-	<script>
-	$(document).ready(function(){
-		$(function(){
-		    $("img.lazy").lazyload({
-		    	threshold : 200,
-		    	placeholder:"../images/loading.gif",
-		    	effect : "fadeIn"
-		    });
-		});
-	})
-	</script>
 </html>

@@ -1,8 +1,8 @@
 /*
 * @Author: JMW
 * @Date:   2017-04-13 08:50:20
-* @Last Modified by:   hzyjsys
-* @Last Modified time: 2017-04-18 17:00:25
+* @Last Modified by:   JMW
+* @Last Modified time: 2017-04-25 11:04:54
 */
 
 /* 轮播图 */
@@ -48,7 +48,7 @@
 	display:block;
 	width: 10px;
 	height: 10px;
-	background: rgba(255,255,255,0.8);
+	background: #fff;
 	text-align: center;
 	float:left;
 	margin:0 14px;
@@ -56,6 +56,8 @@
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
+	behavior: url(ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
+	font-size: 5px;
 }
 #slider .slideshow_paging a.activeSlide {
 	background:rgba(255,192,0,0.8);
@@ -163,18 +165,28 @@
 	position: relative;
 	width: 520px;
 	height: 40px;
-	z-index: 999;
-	top: -130px;
+	z-index: 9;
+	top: -170px;
 	left: 50%;
 	margin-left: -500px;
-	background:rgba(0,0,0,0.6);
+	background:#000;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+	overflow: hidden;
+}
+.maskImg{
+	position: relative;
+	top:-130px;
+	left:50%;
+	margin-left: -500px;
+	z-index: 11;
 }
 /* 内容 */
 #content{
 	width: 100%;
 	background: url(../images/imgp-bg.jpg) no-repeat #eee;
 	background-size: 100% auto;
-	margin-top:-80px;
+	margin-top:-40px;
 }
 #content .con-index{
 	margin: 0 auto;
@@ -198,6 +210,7 @@
 }
 .index-row1 .news img{
 	float: left;
+	display: block;
 }
 .index-row1 .news .more{
 	float: right;
