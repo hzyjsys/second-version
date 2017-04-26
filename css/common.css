@@ -1,8 +1,8 @@
 /*
 * @Author: JMW
 * @Date:   2017-03-29 08:48:38
-* @Last Modified by:   JMW
-* @Last Modified time: 2017-04-26 11:42:38
+* @Last Modified by:   hzyjsys
+* @Last Modified time: 2017-04-26 14:48:12
 */
 
 /* 首图 */
@@ -120,7 +120,7 @@
 	color: #fff;
 }
 #nav-bar .nav li.on{
-	background-color: #f9be00;
+	background-color: rgba(255,255,255,0.6);
 }
 #nav-bar .nav li.on .a1{
 	color:#3e3c3c;
