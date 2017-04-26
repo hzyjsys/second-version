@@ -1,15 +1,15 @@
 /*
 * @Author: JMW
 * @Date:   2017-04-12 11:44:49
-* @Last Modified by:   JMW
-* @Last Modified time: 2017-04-24 14:34:31
+* @Last Modified by:   hzyjsys
+* @Last Modified time: 2017-04-26 14:08:04
 */
 
 'use strict';
 jQuery(document).ready(function($) {
-    window.onresize=function(){ 
-        location.reload(); 
-    }; 
+    // window.onresize=function(){ 
+    //     location.reload(); 
+    // }; 
     //logo切换
     var flag=0;
     $(".logo").click(function(){
