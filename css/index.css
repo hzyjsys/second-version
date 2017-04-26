@@ -2,7 +2,7 @@
 * @Author: JMW
 * @Date:   2017-04-13 08:50:20
 * @Last Modified by:   JMW
-* @Last Modified time: 2017-04-25 14:54:15
+* @Last Modified time: 2017-04-26 11:55:18
 */
 
 /* 轮播图 */
@@ -54,7 +54,6 @@
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-	behavior: url(ie-css3.htc);
 }
 #slider .slideshow_paging a.activeSlide {
 	background:rgba(255,192,0,0.8);
@@ -156,6 +155,7 @@
 .index-row1 .news img{
 	float: left;
 	display: block;
+	border-bottom:2px solid #f47420;
 }
 .index-row1 .news .more{
 	float: right;
@@ -232,9 +232,9 @@
 	font-size: 12px;
 }
 .index-row1 .col1 .pul-list li .news-det{
-	float: left;
+	float: right;
 	width: 692px;
-	margin:4px 0 0 20px;
+	margin-top: 6px;
 }
 .index-row1 .col1 .pul-list li .news-det a{
     font-size: 16px;
@@ -246,11 +246,13 @@
 	font-size: 12px;
 	color:#aaa;
 	margin-top: 5px;
+	overflow: hidden;
 }
 .index-row1 .col1 .pul-list li .news-det p i{
 	font-size: 12px;
 	display: inline-block;
 	width:470px;
+	float: left;
 }
 .index-row1 .col1 .pul-list li .news-det p span{
 	float: right;

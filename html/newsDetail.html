@@ -16,30 +16,6 @@
 	    <script src="../js/common.js"></script>
 	    <script src="../js/jquery.lazyload.min.js"></script>
 	    <script>
-	    	//左侧导航栏跟随
-		    // var explorer =navigator.userAgent;
-		    // if (explorer.indexOf("MSIE") >= 0||explorer.indexOf("rv:11.0")>=0) {
-		    //     var l=$(".left-nav").offset().left;
-		    //     $(window).scroll( function() {
-		    //         var m =$(document).scrollTop();
-		    //         if(m>120&&$(window).width()>=1200){
-		    //             $(".left-nav").css({"position":"fixed","top":"50px","left":l+"px","marginLeft":"0"});
-		    //         }else if(m>120&&$(window).width()<1200&&l<=0){
-		    //             $(".left-nav").css({"position":"fixed","top":"50px","left":"0"});
-		    //         }else{
-		    //             $(".left-nav").css({"position":"absolute","top":"50px","left":"0"});
-		    //         }
-		    //     });
-		    // }else{
-		    //     $(window).scroll( function() {
-		    //         var m =$(document).scrollTop();
-		    //         if(m>120){
-		    //             $(".left-nav").css("top",(m-80)+"px");
-		    //         }else{
-		    //             $(".left-nav").css("top","50px");
-		    //         }
-		    //     });
-		    // }
 		    $(function(){
 			    $("img.lazy").lazyload({
 			    	threshold : 200,
@@ -47,6 +23,30 @@
 			    	effect : "fadeIn"
 			    });
 			    $("#pwdSpan").hide();
+			    //左侧导航栏跟随
+			    var explorer =navigator.userAgent;
+			    if (explorer.indexOf("MSIE 9.0") >= 0||explorer.indexOf("rv:11.0")>=0||explorer.indexOf("MSIE 10.0") >= 0) {
+			        var l=$(".left-nav").offset().left;
+			        $(window).scroll( function() {
+			            var m =$(document).scrollTop();
+			            if(m>120&&$(window).width()>=1200){
+			                $(".left-nav").css({"position":"fixed","top":"50px","left":l+"px","marginLeft":"0"});
+			            }else if(m>120&&$(window).width()<1200&&l<=0){
+			                $(".left-nav").css({"position":"fixed","top":"50px","left":"0"});
+			            }else{
+			                $(".left-nav").css({"position":"absolute","top":"50px","left":"0"});
+			            }
+			        });
+			    }else{
+			        $(window).scroll( function() {
+			            var m =$(document).scrollTop();
+			            if(m>120){
+			                $(".left-nav").css("top",(m-80)+"px");
+			            }else{
+			                $(".left-nav").css("top","50px");
+			            }
+			        });
+			    }
 			});
 	    </script>
 	    <!--[if lte IE 9]>
@@ -70,7 +70,7 @@
     			<a class="logo" title="点击可切换logo">
 	                <img src="../images/logo2.png" alt=""/>
 	            </a>
-	            <img src="../images/logo.png" height="64" width="431" alt="" style="margin-top:20px;"/>
+	            <img src="../images/logo.png" height="64" width="431" alt="" style="margin-top:20px;float:left;"/>
 	            <div class="search">
 	            	<input id="pwd" type="text" placeholder="建设中..."/>
                     <input id="pwdSpan" type="text" placeholder="建设中...">

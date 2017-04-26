@@ -14,6 +14,7 @@
 	    <link rel="stylesheet" href="../css/labInt.css"/>
 	    <script src="../js/jquery.min.js"></script>
 	    <script src="../js/common.js"></script>
+	    <script src="../js/common2.js"></script>
 	    <script src="../js/jquery.lazyload.min.js"></script>
 		<script>
 			$(function(){
@@ -24,6 +25,10 @@
 			    	container:$("#leaderUl")
 			    });
 			    $("#pwdSpan").hide();
+			    var explorer =navigator.userAgent;
+			    if (explorer.indexOf("MSIE 8.0") >= 0||explorer.indexOf("MSIE 7.0") >= 0){
+			    	$(".culture-con").find("iframe").attr("src","../timeline2/index.html");
+			    }
 			});
 		</script>
 	    <!--[if lte IE 9]>
@@ -39,15 +44,25 @@
                 }
             </style>
         <![endif]-->
+        <!--[if IE 7]>
+        	<style>
+				.structure .stru-con ul li.xiangmu{
+					margin-top: 65px;
+				}
+				.structure .stru-con ul li.xiangmu div{
+					margin-top: -24px;
+				}
+        	</style>
+        <![endif]-->
     </head>
     <body>
     	<!-- 头部 -->
     	<div id="header">
-    		<div class="wrapper">
+    		<div class="wrapper clearfix">
     			<a class="logo" title="点击可切换logo">
 	                <img src="../images/logo2.png" alt=""/>
 	            </a>
-	            <img src="../images/logo.png" height="64" width="431" alt="" style="margin-top:20px;"/>
+	            <img src="../images/logo.png" height="64" width="431" alt="" style="margin-top:20px;float:left"/>
 	            <div class="search">
 	            	<input id="pwd" type="text" placeholder="建设中..."/>
                     <input id="pwdSpan" type="text" placeholder="建设中...">
@@ -170,18 +185,18 @@
 									</a>
 								</li>
 								<li style="margin-top:30px;">核心研究团队</li>
-								<li class="yanjiu">
+								<li class="yanjiu clearfix">
 									<div href="javascript:;" style="margin-left:194px;">研究部一</div>
-									<div href="javascript:;" style="margin-left:92px;">研究部二</div>
-									<div href="javascript:;" style="margin-left:94px;">研究部三</div>
-									<div href="javascript:;" style="margin-left:100px;">研究部四</div>
-									<div href="javascript:;" style="margin-left:94px;">研究部五</div>
+									<div href="javascript:;" style="margin-left:98px;">研究部二</div>
+									<div href="javascript:;" style="margin-left:100px;">研究部三</div>
+									<div href="javascript:;" style="margin-left:108px;">研究部四</div>
+									<div href="javascript:;" style="margin-left:98px;">研究部五</div>
 								</li>
-								<li style="margin-top:76px;">项目执行团队
-									<div href="javascript:;" style="margin-left:64px;color:#fff;">项目研究部</div>
-									<div href="javascript:;" style="margin-left:32px;color:#fff;">成果转化部</div>
-									<div href="javascript:;" style="margin-left:32px;color:#fff;">社会服务部</div>
-									<div href="javascript:;" style="margin-left:32px;color:#fff;">行政财务部</div>
+								<li class="xiangmu clearfix">项目执行团队
+									<div href="javascript:;" style="margin-right:32px;color:#fff;">行政财务部</div>
+									<div href="javascript:;" style="margin-right:36px;color:#fff;">社会服务部</div>
+									<div href="javascript:;" style="margin-right:38px;color:#fff;">成果转化部</div>
+									<div href="javascript:;" style="margin-right:40px;color:#fff;">项目研究部</div>
 								</li>
 							</ul>
 						</div>

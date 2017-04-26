@@ -1,18 +1,8 @@
 /*
 * @Author: JMW
-* @Date:   2017-04-17 16:52:57
-* @Last Modified by:   hzyjsys
-<<<<<<< HEAD
-* @Last Modified time: 2017-04-18 16:31:29
-=======
-* @Last Modified time: 2017-04-18 16:22:04
->>>>>>> 093d7430e2136d131b60215e5fb9629efe739974
-*/
-/*
-* @Author: JMW
 * @Date:   2017-03-27 15:28:24
 * @Last Modified by:   JMW
-* @Last Modified time: 2017-04-17 16:32:26
+* @Last Modified time: 2017-04-25 17:35:52
 */
 .contact{
 	width:expression(document.body.clientWidth <= 1440? "1440px": "auto");

@@ -2,7 +2,7 @@
 * @Author: JMW
 * @Date:   2017-03-29 08:48:38
 * @Last Modified by:   JMW
-* @Last Modified time: 2017-04-25 10:37:53
+* @Last Modified time: 2017-04-26 11:42:38
 */
 
 /* 首图 */
@@ -60,6 +60,9 @@
 #header .search{
 	float: right;
 	margin-right: 30px;
+	width: 158px;
+	height: 25px;
+	margin-top: 40px;
 }
 #header .search input{
 	width: 122px;
@@ -67,9 +70,11 @@
 	border:1px solid #ccc;
 	padding-left: 10px;
 	font-size: 12px;
+	float: left;
 }
 #header .search img{
-	margin:42px 0 0 -6px;
+	float: right;
+	margin-left: -1px;
 	cursor: pointer;
 }
 

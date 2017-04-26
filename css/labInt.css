@@ -2,7 +2,7 @@
 * @Author: JMW
 * @Date:   2017-03-27 15:28:24
 * @Last Modified by:   JMW
-* @Last Modified time: 2017-04-18 11:12:38
+* @Last Modified time: 2017-04-26 13:54:24
 */
 
 /* 实验室简介 */
@@ -118,6 +118,13 @@
 	line-height: 32px;
 	font-size: 20px;
 	color:#fff;
+	float: left;
+}
+.structure .stru-con ul li.xiangmu{
+	margin-top: 76px;
+}
+.structure .stru-con ul li.xiangmu div{
+	float: right;
 }
 
 /* 学术委员会 */
